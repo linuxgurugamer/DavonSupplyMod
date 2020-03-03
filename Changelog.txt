@@ -6,3 +6,4 @@ Changelog
 	Added version file
 	Added Assemblyversion.tt
 	Added InstallChecker
+	Changed files from MBM to DDS
