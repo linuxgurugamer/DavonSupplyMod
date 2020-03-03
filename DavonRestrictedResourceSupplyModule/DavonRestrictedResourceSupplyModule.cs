@@ -8,6 +8,7 @@
  using UnityEngine;
 
 using DavonSupplyMod_KACWrapper;
+using ModuleAnimateGenericEffects;
 
 namespace DavonSupplyMod
 {
@@ -743,28 +744,69 @@ namespace DavonSupplyMod
 			}
 			UIcontrol();
 		}
-        
-        
-		void extend()
+
+		private  bool HasMod(string modIdent)
 		{
-			ModuleAnimateGeneric aModuleAnimateGeneric = new ModuleAnimateGeneric();
-			aModuleAnimateGeneric = part.Modules.OfType<ModuleAnimateGeneric>().FirstOrDefault();
-            if (aModuleAnimateGeneric == null) { return; }
-            if (aModuleAnimateGeneric.Events["Toggle"].guiName == "Extend" && aModuleAnimateGeneric.Events["Toggle"].guiActive == true)
-            {
-                aModuleAnimateGeneric.Toggle();
-            }
+			foreach (AssemblyLoader.LoadedAssembly a in AssemblyLoader.loadedAssemblies)
+			{
+				if (modIdent == a.name)
+					return true;
+			}
+			return false;
 		}
-		
-		void retract()
+
+
+		void extendEffects()
 		{
-			ModuleAnimateGeneric aModuleAnimateGeneric = new ModuleAnimateGeneric();
-			aModuleAnimateGeneric = part.Modules.OfType<ModuleAnimateGeneric>().FirstOrDefault();	
+			ModuleAnimateGenericEffects.ModuleAnimateGenericEffects aModuleAnimateGeneric = new ModuleAnimateGenericEffects.ModuleAnimateGenericEffects();
+			aModuleAnimateGeneric = part.Modules.OfType<ModuleAnimateGenericEffects.ModuleAnimateGenericEffects>().FirstOrDefault();
 			if (aModuleAnimateGeneric == null) { return; }
-			if(aModuleAnimateGeneric.Events["Toggle"].guiName == "Retract" && aModuleAnimateGeneric.Events["Toggle"].guiActive == true)				
+			if (aModuleAnimateGeneric.Events["Toggle"].guiName == "Extend" && aModuleAnimateGeneric.Events["Toggle"].guiActive == true)
 			{
 				aModuleAnimateGeneric.Toggle();
-			}			
+			}
+
+		}
+		void extend()
+		{
+			if (HasMod("ModuleAnimateGenericEffects"))
+				extendEffects();
+			else
+			{
+				ModuleAnimateGeneric aModuleAnimateGeneric = new ModuleAnimateGeneric();
+				aModuleAnimateGeneric = part.Modules.OfType<ModuleAnimateGeneric>().FirstOrDefault();
+				if (aModuleAnimateGeneric == null) { return; }
+				if (aModuleAnimateGeneric.Events["Toggle"].guiName == "Extend" && aModuleAnimateGeneric.Events["Toggle"].guiActive == true)
+				{
+					aModuleAnimateGeneric.Toggle();
+				}
+			}
+		}
+
+		void retractEffects()
+		{
+			ModuleAnimateGenericEffects.ModuleAnimateGenericEffects aModuleAnimateGeneric = new ModuleAnimateGenericEffects.ModuleAnimateGenericEffects();
+			aModuleAnimateGeneric = part.Modules.OfType<ModuleAnimateGenericEffects.ModuleAnimateGenericEffects>().FirstOrDefault();
+			if (aModuleAnimateGeneric == null) { return; }
+			if (aModuleAnimateGeneric.Events["Toggle"].guiName == "Retract" && aModuleAnimateGeneric.Events["Toggle"].guiActive == true)
+			{
+				aModuleAnimateGeneric.Toggle();
+			}
+		}
+		void retract()
+		{
+			if (HasMod("ModuleAnimateGenericEffects"))
+				retractEffects();
+			else
+			{
+				ModuleAnimateGeneric aModuleAnimateGeneric = new ModuleAnimateGeneric();
+				aModuleAnimateGeneric = part.Modules.OfType<ModuleAnimateGeneric>().FirstOrDefault();
+				if (aModuleAnimateGeneric == null) { return; }
+				if (aModuleAnimateGeneric.Events["Toggle"].guiName == "Retract" && aModuleAnimateGeneric.Events["Toggle"].guiActive == true)
+				{
+					aModuleAnimateGeneric.Toggle();
+				}
+			}
 		}
     }
 }

@@ -1,7 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DavonRestrictedResourceSupplyModule", "DavonRestrictedResourceSupplyModule\DavonRestrictedResourceSupplyModule.csproj", "{FD503E53-CAD4-4E72-A49A-02CA2325DCB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D0DA67D9-7048-4885-96F8-A68AA8BA5BB9}"
+	ProjectSection(SolutionItems) = preProject
+		buildRelease.bat = buildRelease.bat
+		Changelog.txt = Changelog.txt
+		DavonSupplyMod.version = DavonSupplyMod.version
+		deploy.bat = deploy.bat
+		jenkins.txt = jenkins.txt
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {719B337E-9FFA-4B04-802E-642A310E3133}
 	EndGlobalSection
 EndGlobal
