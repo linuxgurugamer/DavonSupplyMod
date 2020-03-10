@@ -1,5 +1,12 @@
 Changelog
 
+0.2.7
+	Thanks to @Angel-125:
+		New model & textures to replace the old
+		DavonStationLogisticsHub
+		Module now includes a built-in docking port on the extendable part
+	Replaced elevator sound with electric motor
+
 0.2.6
 	Adoption by Linuxgurugamer
 	Added optional sound effects to part, needs ModuleAnimateGenericEffects for them to work
