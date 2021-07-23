@@ -40,7 +40,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="ModuleAnimateGenericEffects">
-      <HintPath>R:\KSP_1.8.1_dev\GameData\ModuleAnimateGenericEffects\Plugins\ModuleAnimateGenericEffects.dll</HintPath>
+      <HintPath>$(KSPDIR)\GameData\ModuleAnimateGenericEffects\Plugins\ModuleAnimateGenericEffects.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
