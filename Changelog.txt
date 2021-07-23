@@ -1,5 +1,10 @@
 Changelog
 
+0.2.7.1
+	Added AssemblyfileVersion
+	Updated version file for 1.12
+	Updated DLL name for CKAN compatibility
+
 0.2.7
 	Thanks to @Angel-125:
 		New model & textures to replace the old
