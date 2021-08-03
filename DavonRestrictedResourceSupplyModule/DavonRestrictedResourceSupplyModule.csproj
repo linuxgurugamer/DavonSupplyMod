@@ -39,8 +39,9 @@
     <Reference Include="$(KSPDIR)\KSP_x64_Data\Managed\UnityEngine*.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="ModuleAnimateGenericEffects">
-      <HintPath>$(KSPDIR)\GameData\ModuleAnimateGenericEffects\Plugins\ModuleAnimateGenericEffects.dll</HintPath>
+    <Reference Include="ModuleAnimateGenericEffects, Version=0.0.1.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\KSP_1.12.0_dev\GameData\ModuleAnimateGenericEffects\Plugins\ModuleAnimateGenericEffects.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
