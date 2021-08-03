@@ -1,6 +1,6 @@
 Changelog
 
-0.2.7.1
+0.2.7.2
 	Added AssemblyfileVersion
 	Updated version file for 1.12
 	Fixed dependency for ModuleAnimateGenericEffects
