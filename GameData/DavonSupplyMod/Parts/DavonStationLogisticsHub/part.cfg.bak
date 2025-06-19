@@ -18,9 +18,9 @@ PART
 	cost = 47000
 	category = Utility
 	subcategory = 0
-	title = #LOC_DavonSM_21
-	manufacturer = #LOC_DavonSM_22
-	description = #LOC_DavonSM_23
+	title = Davon Station Logistics Hub 
+	manufacturer = Davon industries
+	description = The Station Logistics Hub, produced by Davon Tech Ltd, is an integral part of Davon logistic services. After transportation and activation of the module, to be executed by KSP as described in contract 14-4626, Davon will start to offer its very affordable logistic services(tm) as set forth in aforementioned contract in regard to the so deployed and activated station logistics hub. Upon a suitable service request by KSP, Davon will employ automated spacecraft to resupply the asset and make available any such resources to KSP operations on location. Read manual before use. Limited to Kerbin and its moons. Delivery time may vary upon location. Terms of service apply. Cost overruns will, presumably, not occur unless they do, regrettably, and lie with the emptor. Module will remain the property of Devon industries.
 	
 	attachRules = 1,1,1,1,0
 	
@@ -49,9 +49,9 @@ PART
 	{
 		name = ModuleAnimateGeneric
 		animationName = Deploy
-		startEventGUIName = #LOC_DavonSM_24
-		endEventGUIName = #LOC_DavonSM_25
-		actionEventGUIName = #LOC_DavonSM_26
+		startEventGUIName = Extend Docking Port
+		endEventGUIName = Retract Docking Port
+		actionEventGUIName = Toggle Docking Port
 		allowAnimationWhileShielded = False
 	}
 	
@@ -59,9 +59,9 @@ PART
 	{
 		name = ModuleAnimateGenericEffects
 		animationName = Deploy
-		startEventGUIName = #LOC_DavonSM_24
-		endEventGUIName = #LOC_DavonSM_25
-		actionEventGUIName = #LOC_DavonSM_26
+		startEventGUIName = Extend Docking Port
+		endEventGUIName = Retract Docking Port
+		actionEventGUIName = Toggle Docking Port
 		allowAnimationWhileShielded = False
 
 		deployEffectName = deploy

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29728.190
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36212.18 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DavonRestrictedResourceSupplyModule", "DavonRestrictedResourceSupplyModule\DavonRestrictedResourceSupplyModule.csproj", "{FD503E53-CAD4-4E72-A49A-02CA2325DCB6}"
 EndProject
@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Changelog.txt = Changelog.txt
 		DavonSupplyMod.version = DavonSupplyMod.version
 		deploy.bat = deploy.bat
+		GameData\DavonSupplyMod\Localization\en-us.cfg = GameData\DavonSupplyMod\Localization\en-us.cfg
 		jenkins.txt = jenkins.txt
 		LICENSE.md = LICENSE.md
 		README.md = README.md
